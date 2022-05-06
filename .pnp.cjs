@@ -35,19 +35,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@openzeppelin/contracts", "npm:4.6.0"],
+            ["@walletconnect/encoding", "npm:1.0.1"],
             ["@walletconnect/web3-provider", "npm:1.7.8"],
-            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.10.0"],
+            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.6.3"],
             ["autoprefixer", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:10.4.7"],
-            ["eslint", "npm:8.14.0"],
-            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
+            ["eslint", "npm:8.11.0"],
+            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
             ["ethers", "npm:5.6.5"],
             ["magic-sdk", "npm:8.1.1"],
             ["moment", "npm:2.29.3"],
             ["moralis", "npm:1.6.0"],
-            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
+            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
             ["postcss", "npm:8.4.13"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["react-icons", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:4.3.1"],
             ["react-moralis", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.3.5"],
             ["react-simple-hook-modal", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.1.0"],
@@ -464,7 +467,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/sheet", "npm:0.9.4"],
             ["@emotion/utils", "npm:0.11.3"],
             ["@types/react", null],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
@@ -550,7 +553,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", null],
             ["@types/react", null],
             ["hoist-non-react-statics", "npm:3.3.2"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@babel/core",
@@ -620,7 +623,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__core", null],
             ["@types/react", null],
             ["babel-plugin-emotion", "npm:10.2.2"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@emotion/core",
@@ -650,7 +653,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/utils", "npm:0.11.3"],
             ["@types/emotion__core", null],
             ["@types/react", null],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@emotion/core",
@@ -1425,128 +1428,119 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@next/env", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/cache/@next-env-npm-12.1.6-b2a27e0c8f-e6a4f189f0.zip/node_modules/@next/env/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/cache/@next-env-npm-12.1.0-18b18c02cb-31037e0198.zip/node_modules/@next/env/",
           "packageDependencies": [
-            ["@next/env", "npm:12.1.6"]
+            ["@next/env", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/eslint-plugin-next", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/cache/@next-eslint-plugin-next-npm-12.1.6-36b90e378b-33dcaf71f2.zip/node_modules/@next/eslint-plugin-next/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/cache/@next-eslint-plugin-next-npm-12.1.0-487fccfc38-d6875f65e1.zip/node_modules/@next/eslint-plugin-next/",
           "packageDependencies": [
-            ["@next/eslint-plugin-next", "npm:12.1.6"],
+            ["@next/eslint-plugin-next", "npm:12.1.0"],
             ["glob", "npm:7.1.7"]
           ],
           "linkType": "HARD",
         }]
       ]],
-      ["@next/swc-android-arm-eabi", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-android-arm-eabi-npm-12.1.6-2ee2ef3c2c/node_modules/@next/swc-android-arm-eabi/",
-          "packageDependencies": [
-            ["@next/swc-android-arm-eabi", "npm:12.1.6"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["@next/swc-android-arm64", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-android-arm64-npm-12.1.6-938b2f6cbb/node_modules/@next/swc-android-arm64/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-android-arm64-npm-12.1.0-6b9855a45e/node_modules/@next/swc-android-arm64/",
           "packageDependencies": [
-            ["@next/swc-android-arm64", "npm:12.1.6"]
+            ["@next/swc-android-arm64", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-darwin-arm64", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-darwin-arm64-npm-12.1.6-5df30a2b11/node_modules/@next/swc-darwin-arm64/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-darwin-arm64-npm-12.1.0-773b5e10e1/node_modules/@next/swc-darwin-arm64/",
           "packageDependencies": [
-            ["@next/swc-darwin-arm64", "npm:12.1.6"]
+            ["@next/swc-darwin-arm64", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-darwin-x64", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-darwin-x64-npm-12.1.6-31ae5e0ffa/node_modules/@next/swc-darwin-x64/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-darwin-x64-npm-12.1.0-2cab2f321b/node_modules/@next/swc-darwin-x64/",
           "packageDependencies": [
-            ["@next/swc-darwin-x64", "npm:12.1.6"]
+            ["@next/swc-darwin-x64", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-linux-arm-gnueabihf", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm-gnueabihf-npm-12.1.6-91145b1995/node_modules/@next/swc-linux-arm-gnueabihf/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm-gnueabihf-npm-12.1.0-ffcfe7394a/node_modules/@next/swc-linux-arm-gnueabihf/",
           "packageDependencies": [
-            ["@next/swc-linux-arm-gnueabihf", "npm:12.1.6"]
+            ["@next/swc-linux-arm-gnueabihf", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-linux-arm64-gnu", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm64-gnu-npm-12.1.6-eb31dba6cc/node_modules/@next/swc-linux-arm64-gnu/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm64-gnu-npm-12.1.0-ff063ca9ef/node_modules/@next/swc-linux-arm64-gnu/",
           "packageDependencies": [
-            ["@next/swc-linux-arm64-gnu", "npm:12.1.6"]
+            ["@next/swc-linux-arm64-gnu", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-linux-arm64-musl", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm64-musl-npm-12.1.6-9b22bf5e93/node_modules/@next/swc-linux-arm64-musl/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-linux-arm64-musl-npm-12.1.0-6a6db50832/node_modules/@next/swc-linux-arm64-musl/",
           "packageDependencies": [
-            ["@next/swc-linux-arm64-musl", "npm:12.1.6"]
+            ["@next/swc-linux-arm64-musl", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-linux-x64-gnu", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-linux-x64-gnu-npm-12.1.6-28626beade/node_modules/@next/swc-linux-x64-gnu/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-linux-x64-gnu-npm-12.1.0-9ea5ce91a7/node_modules/@next/swc-linux-x64-gnu/",
           "packageDependencies": [
-            ["@next/swc-linux-x64-gnu", "npm:12.1.6"]
+            ["@next/swc-linux-x64-gnu", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-linux-x64-musl", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-linux-x64-musl-npm-12.1.6-1ca134026f/node_modules/@next/swc-linux-x64-musl/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-linux-x64-musl-npm-12.1.0-ba7473df3f/node_modules/@next/swc-linux-x64-musl/",
           "packageDependencies": [
-            ["@next/swc-linux-x64-musl", "npm:12.1.6"]
+            ["@next/swc-linux-x64-musl", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-win32-arm64-msvc", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-win32-arm64-msvc-npm-12.1.6-f46d9c9e5b/node_modules/@next/swc-win32-arm64-msvc/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-win32-arm64-msvc-npm-12.1.0-f127861bca/node_modules/@next/swc-win32-arm64-msvc/",
           "packageDependencies": [
-            ["@next/swc-win32-arm64-msvc", "npm:12.1.6"]
+            ["@next/swc-win32-arm64-msvc", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-win32-ia32-msvc", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-win32-ia32-msvc-npm-12.1.6-819c161332/node_modules/@next/swc-win32-ia32-msvc/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-win32-ia32-msvc-npm-12.1.0-7254af0369/node_modules/@next/swc-win32-ia32-msvc/",
           "packageDependencies": [
-            ["@next/swc-win32-ia32-msvc", "npm:12.1.6"]
+            ["@next/swc-win32-ia32-msvc", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@next/swc-win32-x64-msvc", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/unplugged/@next-swc-win32-x64-msvc-npm-12.1.6-c23d523f92/node_modules/@next/swc-win32-x64-msvc/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/unplugged/@next-swc-win32-x64-msvc-npm-12.1.0-488609d4d3/node_modules/@next/swc-win32-x64-msvc/",
           "packageDependencies": [
-            ["@next/swc-win32-x64-msvc", "npm:12.1.6"]
+            ["@next/swc-win32-x64-msvc", "npm:12.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1600,6 +1594,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.0"],
             ["mkdirp", "npm:1.0.4"],
             ["rimraf", "npm:3.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@openzeppelin/contracts", [
+        ["npm:4.6.0", {
+          "packageLocation": "./.yarn/cache/@openzeppelin-contracts-npm-4.6.0-1ab1fa16fc-1de06211b2.zip/node_modules/@openzeppelin/contracts/",
+          "packageDependencies": [
+            ["@openzeppelin/contracts", "npm:4.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1706,8 +1709,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["global", "npm:4.4.0"],
             ["memoizerific", "npm:1.11.3"],
             ["polished", "npm:4.2.2"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["resolve-from", "npm:5.0.0"],
             ["ts-dedent", "npm:2.2.0"]
           ],
@@ -1737,14 +1740,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-base-controllers-virtual-7a90cb6c55/0/cache/@toruslabs-base-controllers-npm-1.6.17-dd8a6374db-6107aedcc5.zip/node_modules/@toruslabs/base-controllers/",
+        ["virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-base-controllers-virtual-87c53e1fac/0/cache/@toruslabs-base-controllers-npm-1.6.17-dd8a6374db-6107aedcc5.zip/node_modules/@toruslabs/base-controllers/",
           "packageDependencies": [
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
+            ["@toruslabs/base-controllers", "virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17"],
             ["@babel/runtime", null],
             ["@toruslabs/broadcast-channel", "npm:4.12.3"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
+            ["@types/babel__runtime", null],
+            ["async-mutex", "npm:0.3.2"],
+            ["bignumber.js", "npm:9.0.2"],
+            ["bowser", "npm:2.11.0"],
+            ["eth-rpc-errors", "npm:4.0.3"],
+            ["ethereumjs-util", "npm:7.1.4"],
+            ["json-rpc-random-id", "npm:1.0.1"],
+            ["lodash", "npm:4.17.21"],
+            ["loglevel", "npm:1.8.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-base-controllers-virtual-dc9cbc84b8/0/cache/@toruslabs-base-controllers-npm-1.6.17-dd8a6374db-6107aedcc5.zip/node_modules/@toruslabs/base-controllers/",
+          "packageDependencies": [
+            ["@toruslabs/base-controllers", "virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/broadcast-channel", "npm:4.12.3"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["async-mutex", "npm:0.3.2"],
             ["bignumber.js", "npm:9.0.2"],
@@ -1807,11 +1834,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.0.1", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-fetch-node-details-virtual-d32258c2c5/0/cache/@toruslabs-fetch-node-details-npm-5.0.1-3410736704-d8d4dc8d2f.zip/node_modules/@toruslabs/fetch-node-details/",
+        ["virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.0.1", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-fetch-node-details-virtual-17fad82ee1/0/cache/@toruslabs-fetch-node-details-npm-5.0.1-3410736704-d8d4dc8d2f.zip/node_modules/@toruslabs/fetch-node-details/",
           "packageDependencies": [
-            ["@toruslabs/fetch-node-details", "virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.0.1"],
+            ["@toruslabs/fetch-node-details", "virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.0.1"],
             ["@babel/runtime", null],
+            ["@types/babel__runtime", null],
+            ["web3-eth-contract", "npm:1.7.3"],
+            ["web3-utils", "npm:1.7.3"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.0.1", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-fetch-node-details-virtual-647330551a/0/cache/@toruslabs-fetch-node-details-npm-5.0.1-3410736704-d8d4dc8d2f.zip/node_modules/@toruslabs/fetch-node-details/",
+          "packageDependencies": [
+            ["@toruslabs/fetch-node-details", "virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.0.1"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
             ["web3-eth-contract", "npm:1.7.3"],
             ["web3-utils", "npm:1.7.3"]
@@ -1831,10 +1873,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a53275263104854f34188c11e334ae31a1d8303d87441aef4ec71816808ee20c2fe90660dcca213024f7b95dd5c12e904801381f3d912cff8f96935515b0c6d7#npm:2.2.0", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-http-helpers-virtual-3520dba773/0/cache/@toruslabs-http-helpers-npm-2.2.0-b52867f9a7-3705600bb5.zip/node_modules/@toruslabs/http-helpers/",
+        ["virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-http-helpers-virtual-fd3356e629/0/cache/@toruslabs-http-helpers-npm-2.2.0-b52867f9a7-3705600bb5.zip/node_modules/@toruslabs/http-helpers/",
           "packageDependencies": [
-            ["@toruslabs/http-helpers", "virtual:a53275263104854f34188c11e334ae31a1d8303d87441aef4ec71816808ee20c2fe90660dcca213024f7b95dd5c12e904801381f3d912cff8f96935515b0c6d7#npm:2.2.0"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
             ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
             ["lodash.merge", "npm:4.6.2"],
@@ -1846,10 +1888,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-http-helpers-virtual-3f10beb9de/0/cache/@toruslabs-http-helpers-npm-2.2.0-b52867f9a7-3705600bb5.zip/node_modules/@toruslabs/http-helpers/",
+        ["virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-http-helpers-virtual-c6baa7ff31/0/cache/@toruslabs-http-helpers-npm-2.2.0-b52867f9a7-3705600bb5.zip/node_modules/@toruslabs/http-helpers/",
           "packageDependencies": [
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
             ["@babel/runtime", null],
             ["@types/babel__runtime", null],
             ["lodash.merge", "npm:4.6.2"],
@@ -1876,7 +1918,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@toruslabs/metadata-helpers", "virtual:fc2a14116d8e70df5187ecd464c527eaf8932d2027b381af7c0b353ac99389ae3c07ad39d09656166ea33d737d9f0a91eac249a44be1ec105958900da7cd1926#npm:2.5.0"],
             ["@babel/runtime", "npm:7.17.9"],
             ["@toruslabs/eccrypto", "npm:1.1.8"],
-            ["@toruslabs/http-helpers", "virtual:a53275263104854f34188c11e334ae31a1d8303d87441aef4ec71816808ee20c2fe90660dcca213024f7b95dd5c12e904801381f3d912cff8f96935515b0c6d7#npm:2.2.0"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
             ["@types/babel__runtime", null],
             ["elliptic", "npm:6.5.4"],
             ["json-stable-stringify", "npm:1.0.1"],
@@ -1897,15 +1939,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-virtual-f2ad0da43f/0/cache/@toruslabs-openlogin-npm-1.7.4-61684c22b4-69d19bd17b.zip/node_modules/@toruslabs/openlogin/",
+        ["virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.4", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-virtual-919d1f269f/0/cache/@toruslabs-openlogin-npm-1.7.4-61684c22b4-69d19bd17b.zip/node_modules/@toruslabs/openlogin/",
           "packageDependencies": [
-            ["@toruslabs/openlogin", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4"],
+            ["@toruslabs/openlogin", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.4"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/eccrypto", "npm:1.1.8"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
+            ["@toruslabs/openlogin-utils", "virtual:e147e582225458014de3f2a8999f35b24e93244085de86313c003311ca9f64c1b6cd96ed8366527b2eb9d1788ee0a97d59df88ed48be9aff848037b30b0016ca#npm:1.7.0"],
+            ["@types/babel__runtime", null],
+            ["lodash.merge", "npm:4.6.2"],
+            ["loglevel", "npm:1.8.0"],
+            ["pump", "npm:3.0.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.4", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-virtual-b2936437d6/0/cache/@toruslabs-openlogin-npm-1.7.4-61684c22b4-69d19bd17b.zip/node_modules/@toruslabs/openlogin/",
+          "packageDependencies": [
+            ["@toruslabs/openlogin", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.4"],
             ["@babel/runtime", null],
             ["@toruslabs/eccrypto", "npm:1.1.8"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
-            ["@toruslabs/openlogin-utils", "virtual:9acd98cd0677befb24fe5e91d436fc3db73fec9ad4b0dd60df1c1ec8d38133dd20fc51238e99817eeb0e69fd252730e3e2cfcd02ed128e9886680e862ad2234c#npm:1.7.0"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
+            ["@toruslabs/openlogin-utils", "virtual:c4e2cce89fbe88faeb7933db2944b41a6b63792603879560a1fd67826103d0ce2e01321b64d9c421cfd2fab8a3cc97bfb16213193f63706c728bdba1ca451d7f#npm:1.7.0"],
             ["@types/babel__runtime", null],
             ["lodash.merge", "npm:4.6.2"],
             ["loglevel", "npm:1.8.0"],
@@ -1926,10 +1988,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.0", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-ed25519-virtual-87b7660c98/0/cache/@toruslabs-openlogin-ed25519-npm-1.7.0-0976666204-66474c5e7b.zip/node_modules/@toruslabs/openlogin-ed25519/",
+        ["virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-ed25519-virtual-9f0f0fa52f/0/cache/@toruslabs-openlogin-ed25519-npm-1.7.0-0976666204-66474c5e7b.zip/node_modules/@toruslabs/openlogin-ed25519/",
           "packageDependencies": [
-            ["@toruslabs/openlogin-ed25519", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.0"],
+            ["@toruslabs/openlogin-ed25519", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.0"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/tweetnacl-js", "npm:1.0.3"],
+            ["@types/babel__runtime", null]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-ed25519-virtual-e4f2597b73/0/cache/@toruslabs-openlogin-ed25519-npm-1.7.0-0976666204-66474c5e7b.zip/node_modules/@toruslabs/openlogin-ed25519/",
+          "packageDependencies": [
+            ["@toruslabs/openlogin-ed25519", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.0"],
             ["@babel/runtime", null],
             ["@toruslabs/tweetnacl-js", "npm:1.0.3"],
             ["@types/babel__runtime", null]
@@ -1949,12 +2025,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-jrpc-virtual-9acd98cd06/0/cache/@toruslabs-openlogin-jrpc-npm-1.7.3-16fab9d46d-9cb7b78096.zip/node_modules/@toruslabs/openlogin-jrpc/",
+        ["virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-jrpc-virtual-c4e2cce89f/0/cache/@toruslabs-openlogin-jrpc-npm-1.7.3-16fab9d46d-9cb7b78096.zip/node_modules/@toruslabs/openlogin-jrpc/",
           "packageDependencies": [
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@babel/runtime", null],
-            ["@toruslabs/openlogin-utils", "virtual:9acd98cd0677befb24fe5e91d436fc3db73fec9ad4b0dd60df1c1ec8d38133dd20fc51238e99817eeb0e69fd252730e3e2cfcd02ed128e9886680e862ad2234c#npm:1.7.0"],
+            ["@toruslabs/openlogin-utils", "virtual:c4e2cce89fbe88faeb7933db2944b41a6b63792603879560a1fd67826103d0ce2e01321b64d9c421cfd2fab8a3cc97bfb16213193f63706c728bdba1ca451d7f#npm:1.7.0"],
+            ["@types/babel__runtime", null],
+            ["end-of-stream", "npm:1.4.4"],
+            ["eth-rpc-errors", "npm:4.0.3"],
+            ["events", "npm:3.3.0"],
+            ["fast-safe-stringify", "npm:2.1.1"],
+            ["once", "npm:1.4.0"],
+            ["pump", "npm:3.0.0"],
+            ["readable-stream", "npm:3.6.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-jrpc-virtual-e147e58222/0/cache/@toruslabs-openlogin-jrpc-npm-1.7.3-16fab9d46d-9cb7b78096.zip/node_modules/@toruslabs/openlogin-jrpc/",
+          "packageDependencies": [
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/openlogin-utils", "virtual:e147e582225458014de3f2a8999f35b24e93244085de86313c003311ca9f64c1b6cd96ed8366527b2eb9d1788ee0a97d59df88ed48be9aff848037b30b0016ca#npm:1.7.0"],
             ["@types/babel__runtime", null],
             ["end-of-stream", "npm:1.4.4"],
             ["eth-rpc-errors", "npm:4.0.3"],
@@ -1979,11 +2076,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:9acd98cd0677befb24fe5e91d436fc3db73fec9ad4b0dd60df1c1ec8d38133dd20fc51238e99817eeb0e69fd252730e3e2cfcd02ed128e9886680e862ad2234c#npm:1.7.0", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-utils-virtual-f334a1eec1/0/cache/@toruslabs-openlogin-utils-npm-1.7.0-5fc7f64a31-8c9a20ac35.zip/node_modules/@toruslabs/openlogin-utils/",
+        ["virtual:c4e2cce89fbe88faeb7933db2944b41a6b63792603879560a1fd67826103d0ce2e01321b64d9c421cfd2fab8a3cc97bfb16213193f63706c728bdba1ca451d7f#npm:1.7.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-utils-virtual-b5c2281d7e/0/cache/@toruslabs-openlogin-utils-npm-1.7.0-5fc7f64a31-8c9a20ac35.zip/node_modules/@toruslabs/openlogin-utils/",
           "packageDependencies": [
-            ["@toruslabs/openlogin-utils", "virtual:9acd98cd0677befb24fe5e91d436fc3db73fec9ad4b0dd60df1c1ec8d38133dd20fc51238e99817eeb0e69fd252730e3e2cfcd02ed128e9886680e862ad2234c#npm:1.7.0"],
+            ["@toruslabs/openlogin-utils", "virtual:c4e2cce89fbe88faeb7933db2944b41a6b63792603879560a1fd67826103d0ce2e01321b64d9c421cfd2fab8a3cc97bfb16213193f63706c728bdba1ca451d7f#npm:1.7.0"],
             ["@babel/runtime", null],
+            ["@types/babel__runtime", null],
+            ["base64url", "npm:3.0.1"],
+            ["keccak", "npm:3.0.2"],
+            ["randombytes", "npm:2.1.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:e147e582225458014de3f2a8999f35b24e93244085de86313c003311ca9f64c1b6cd96ed8366527b2eb9d1788ee0a97d59df88ed48be9aff848037b30b0016ca#npm:1.7.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-openlogin-utils-virtual-3f1d2b9ce3/0/cache/@toruslabs-openlogin-utils-npm-1.7.0-5fc7f64a31-8c9a20ac35.zip/node_modules/@toruslabs/openlogin-utils/",
+          "packageDependencies": [
+            ["@toruslabs/openlogin-utils", "virtual:e147e582225458014de3f2a8999f35b24e93244085de86313c003311ca9f64c1b6cd96ed8366527b2eb9d1788ee0a97d59df88ed48be9aff848037b30b0016ca#npm:1.7.0"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
             ["base64url", "npm:3.0.1"],
             ["keccak", "npm:3.0.2"],
@@ -2004,15 +2117,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:536b73c89e955e6a3bcdaa2d767eafe78e111865824f85e6c93acc2196e51cc10d8f5a976e9e85bcdffb09600179f0ffa155133bab912cbac06c8b096b03bcd2#npm:0.1.6", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-solana-embed-virtual-83a1fd3aab/0/cache/@toruslabs-solana-embed-npm-0.1.6-f2e702d4d3-f018af8a42.zip/node_modules/@toruslabs/solana-embed/",
+        ["virtual:7e87976156e082005bcc8d8140ba934c017971adce6a1b180607be465787d26bde242edac42b1e58ca2dd0a499c546c67f5e90e1b73ecb691e2365a202c26b9e#npm:0.1.6", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-solana-embed-virtual-5025018a35/0/cache/@toruslabs-solana-embed-npm-0.1.6-f2e702d4d3-f018af8a42.zip/node_modules/@toruslabs/solana-embed/",
           "packageDependencies": [
-            ["@toruslabs/solana-embed", "virtual:536b73c89e955e6a3bcdaa2d767eafe78e111865824f85e6c93acc2196e51cc10d8f5a976e9e85bcdffb09600179f0ffa155133bab912cbac06c8b096b03bcd2#npm:0.1.6"],
+            ["@toruslabs/solana-embed", "virtual:7e87976156e082005bcc8d8140ba934c017971adce6a1b180607be465787d26bde242edac42b1e58ca2dd0a499c546c67f5e90e1b73ecb691e2365a202c26b9e#npm:0.1.6"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@solana/web3.js", "npm:1.41.4"],
+            ["@toruslabs/base-controllers", "virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
+            ["@types/babel__runtime", null],
+            ["eth-rpc-errors", "npm:4.0.3"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["is-stream", "npm:2.0.1"],
+            ["lodash-es", "npm:4.17.21"],
+            ["loglevel", "npm:1.8.0"],
+            ["pump", "npm:3.0.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f3c6638dc0a8e8c26928f4931bf07a20f3c27e6d5f7f4bcc6cb879ad6de397badab5e854e81382e9a350096940dc9c006ab0d8227c2590f105186d424a6b2847#npm:0.1.6", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-solana-embed-virtual-d8988071a7/0/cache/@toruslabs-solana-embed-npm-0.1.6-f2e702d4d3-f018af8a42.zip/node_modules/@toruslabs/solana-embed/",
+          "packageDependencies": [
+            ["@toruslabs/solana-embed", "virtual:f3c6638dc0a8e8c26928f4931bf07a20f3c27e6d5f7f4bcc6cb879ad6de397badab5e854e81382e9a350096940dc9c006ab0d8227c2590f105186d424a6b2847#npm:0.1.6"],
             ["@babel/runtime", null],
             ["@solana/web3.js", "npm:1.41.4"],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["eth-rpc-errors", "npm:4.0.3"],
             ["fast-deep-equal", "npm:3.1.3"],
@@ -2036,16 +2172,44 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:8683335a2d0d0d8922215e6603f959f48631f63150cc6b1b28a4cb0c8b2ad9488052a9322cce2b5ec178507b8fe580aa8d6e923e8d7065f2b2958775df752e60#npm:1.22.5", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus-embed-virtual-3ef044f97d/0/cache/@toruslabs-torus-embed-npm-1.22.5-c5deef7745-ef373fa9c9.zip/node_modules/@toruslabs/torus-embed/",
+        ["virtual:a751f9a58598a2db18822aa8cab357a7619a9c41522e3ab60b524cf9ecb6ac0a595709222c0222bfcaa45c509ec839be8d8ccc6618539ecb53449606ccee2d3f#npm:1.22.5", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus-embed-virtual-e55924e173/0/cache/@toruslabs-torus-embed-npm-1.22.5-c5deef7745-ef373fa9c9.zip/node_modules/@toruslabs/torus-embed/",
           "packageDependencies": [
-            ["@toruslabs/torus-embed", "virtual:8683335a2d0d0d8922215e6603f959f48631f63150cc6b1b28a4cb0c8b2ad9488052a9322cce2b5ec178507b8fe580aa8d6e923e8d7065f2b2958775df752e60#npm:1.22.5"],
+            ["@toruslabs/torus-embed", "virtual:a751f9a58598a2db18822aa8cab357a7619a9c41522e3ab60b524cf9ecb6ac0a595709222c0222bfcaa45c509ec839be8d8ccc6618539ecb53449606ccee2d3f#npm:1.22.5"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@metamask/obs-store", "npm:7.0.0"],
+            ["@toruslabs/fetch-node-details", "virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.0.1"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
+            ["@toruslabs/torus.js", "virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.1.0"],
+            ["@types/babel__runtime", null],
+            ["create-hash", "npm:1.2.0"],
+            ["end-of-stream", "npm:1.4.4"],
+            ["eth-rpc-errors", "npm:4.0.3"],
+            ["events", "npm:3.3.0"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["is-stream", "npm:2.0.1"],
+            ["lodash.merge", "npm:4.6.2"],
+            ["loglevel", "npm:1.8.0"],
+            ["once", "npm:1.4.0"],
+            ["pump", "npm:3.0.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:c7da79903b44c93b333d5751ad3c1b95771c28b9afa9a9c5aca76a01e8708c8c491adc93af7679b6bd55c8ffafac55ffe9dda919b37743b3d83ff7d043a2da53#npm:1.22.5", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus-embed-virtual-7263e42699/0/cache/@toruslabs-torus-embed-npm-1.22.5-c5deef7745-ef373fa9c9.zip/node_modules/@toruslabs/torus-embed/",
+          "packageDependencies": [
+            ["@toruslabs/torus-embed", "virtual:c7da79903b44c93b333d5751ad3c1b95771c28b9afa9a9c5aca76a01e8708c8c491adc93af7679b6bd55c8ffafac55ffe9dda919b37743b3d83ff7d043a2da53#npm:1.22.5"],
             ["@babel/runtime", null],
             ["@metamask/obs-store", "npm:7.0.0"],
-            ["@toruslabs/fetch-node-details", "virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.0.1"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
-            ["@toruslabs/torus.js", "virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.1.0"],
+            ["@toruslabs/fetch-node-details", "virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.0.1"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
+            ["@toruslabs/torus.js", "virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.1.0"],
             ["@types/babel__runtime", null],
             ["create-hash", "npm:1.2.0"],
             ["end-of-stream", "npm:1.4.4"],
@@ -2073,13 +2237,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.1.0", {
-          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus.js-virtual-fdf82b61e4/0/cache/@toruslabs-torus.js-npm-5.1.0-276a179d2c-1246996c02.zip/node_modules/@toruslabs/torus.js/",
+        ["virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.1.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus.js-virtual-be1e91bc94/0/cache/@toruslabs-torus.js-npm-5.1.0-276a179d2c-1246996c02.zip/node_modules/@toruslabs/torus.js/",
           "packageDependencies": [
-            ["@toruslabs/torus.js", "virtual:3ef044f97de971a8cc8730bf2d4effdceb9f07217ff42a26084beae84a5251460737f1acfde945524fb72e1c6309aea30b6fccd776245e75c1bbe7592a09869c#npm:5.1.0"],
+            ["@toruslabs/torus.js", "virtual:7263e426992aa60d1cec7638a54664995f2fc1963f8c0bdc84ed4df6c078b825f1b549907b29dfd4fe406f5fb2f10f41775fd1fe21ffe24437a0ff2e2b20111f#npm:5.1.0"],
             ["@babel/runtime", null],
             ["@toruslabs/eccrypto", "npm:1.1.8"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
+            ["@toruslabs/http-helpers", "virtual:b2936437d66d3cfbe8ed347aa17751903a72a98fd2007f495c824c36172bd1b823d4781f4a54c2c3de29e34921701c5affb37645be44a05ef49ef6db025502eb#npm:2.2.0"],
+            ["@types/babel__runtime", null],
+            ["bn.js", "npm:5.2.0"],
+            ["elliptic", "npm:6.5.4"],
+            ["json-stable-stringify", "npm:1.0.1"],
+            ["loglevel", "npm:1.8.0"],
+            ["web3-utils", "npm:1.7.3"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.1.0", {
+          "packageLocation": "./.yarn/__virtual__/@toruslabs-torus.js-virtual-8a017c7616/0/cache/@toruslabs-torus.js-npm-5.1.0-276a179d2c-1246996c02.zip/node_modules/@toruslabs/torus.js/",
+          "packageDependencies": [
+            ["@toruslabs/torus.js", "virtual:e55924e173ede6e77d7c761078710b2dd1049ca05f4b747a53f78459a61874adf9369d08b2d78a948cdfb17588812b1dbfc5e4306b6a0246d47b058ae59bf831#npm:5.1.0"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/eccrypto", "npm:1.1.8"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
             ["@types/babel__runtime", null],
             ["bn.js", "npm:5.2.0"],
             ["elliptic", "npm:6.5.4"],
@@ -2242,17 +2426,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:5.22.0", {
-          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-db4fcafa81/0/cache/@typescript-eslint-parser-npm-5.22.0-79ad1d0156-28a7d4b731.zip/node_modules/@typescript-eslint/parser/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:5.22.0", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-85b08605ad/0/cache/@typescript-eslint-parser-npm-5.22.0-79ad1d0156-28a7d4b731.zip/node_modules/@typescript-eslint/parser/",
           "packageDependencies": [
-            ["@typescript-eslint/parser", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:5.22.0"],
+            ["@typescript-eslint/parser", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:5.22.0"],
             ["@types/eslint", null],
             ["@types/typescript", null],
             ["@typescript-eslint/scope-manager", "npm:5.22.0"],
             ["@typescript-eslint/types", "npm:5.22.0"],
-            ["@typescript-eslint/typescript-estree", "virtual:db4fcafa818782de297cfd1e75d0de58bcd57b0e065036ce7c51549d86a8f5d4e1ab546a7ee00b6a8a8551f9956c27edf3db54dc8be1b77ea1180b523c4ee974#npm:5.22.0"],
+            ["@typescript-eslint/typescript-estree", "virtual:85b08605ad92e4caa5b508d08e1eaac317fb6626fd3f062faa9220fecf6a2a752bc74a741b66ae34450ac0d08a7db0ef62d349b7248ca9d9c5f1f0399410bfe4#npm:5.22.0"],
             ["debug", "virtual:c61bddeb28ff5847f1a465b4dddb837a3d099a22e15a9fe3124a47a7e2d4ac1c2af811c54e48451d4f63d1957aae19762d202c1b452ad077e0fae6b219584389#npm:4.3.4"],
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["typescript", null]
           ],
           "packagePeers": [
@@ -2292,10 +2476,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:db4fcafa818782de297cfd1e75d0de58bcd57b0e065036ce7c51549d86a8f5d4e1ab546a7ee00b6a8a8551f9956c27edf3db54dc8be1b77ea1180b523c4ee974#npm:5.22.0", {
-          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-314e7677b2/0/cache/@typescript-eslint-typescript-estree-npm-5.22.0-daef66b0fe-2797a79d7d.zip/node_modules/@typescript-eslint/typescript-estree/",
+        ["virtual:85b08605ad92e4caa5b508d08e1eaac317fb6626fd3f062faa9220fecf6a2a752bc74a741b66ae34450ac0d08a7db0ef62d349b7248ca9d9c5f1f0399410bfe4#npm:5.22.0", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-e8b8bfc3c2/0/cache/@typescript-eslint-typescript-estree-npm-5.22.0-daef66b0fe-2797a79d7d.zip/node_modules/@typescript-eslint/typescript-estree/",
           "packageDependencies": [
-            ["@typescript-eslint/typescript-estree", "virtual:db4fcafa818782de297cfd1e75d0de58bcd57b0e065036ce7c51549d86a8f5d4e1ab546a7ee00b6a8a8551f9956c27edf3db54dc8be1b77ea1180b523c4ee974#npm:5.22.0"],
+            ["@typescript-eslint/typescript-estree", "virtual:85b08605ad92e4caa5b508d08e1eaac317fb6626fd3f062faa9220fecf6a2a752bc74a741b66ae34450ac0d08a7db0ef62d349b7248ca9d9c5f1f0399410bfe4#npm:5.22.0"],
             ["@types/typescript", null],
             ["@typescript-eslint/types", "npm:5.22.0"],
             ["@typescript-eslint/visitor-keys", "npm:5.22.0"],
@@ -2303,7 +2487,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["globby", "npm:11.1.0"],
             ["is-glob", "npm:4.0.3"],
             ["semver", "npm:7.3.7"],
-            ["tsutils", "virtual:314e7677b25013f5fd7b68d35fe353e2ee8dbc571586fc705f7b90b14a8a3a7108873c813454780ba88158aed29112878ad5d1c212b41337a7bf6b1d4c42d581#npm:3.21.0"],
+            ["tsutils", "virtual:e8b8bfc3c273eb6cf220e4c758cacd825fe964561b1b6d15da9f455b9125694178ee75205393ac01fbd216abfa1fa26da2e5c600b439a2fdbea24ab8c0d5c33c#npm:3.21.0"],
             ["typescript", null]
           ],
           "packagePeers": [
@@ -2560,13 +2744,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/base", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-base-npm-0.10.0-5d129d6822-040f0345b4.zip/node_modules/@web3auth/base/",
-          "packageDependencies": [
-            ["@web3auth/base", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-base-npm-0.3.1-1f076fbc53-778f749ecf.zip/node_modules/@web3auth/base/",
           "packageDependencies": [
@@ -2574,12 +2751,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-base-virtual-c4c4cedcab/0/cache/@web3auth-base-npm-0.10.0-5d129d6822-040f0345b4.zip/node_modules/@web3auth/base/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-base-npm-0.6.3-9bcf247ab9-ff42539a21.zip/node_modules/@web3auth/base/",
           "packageDependencies": [
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
+            ["@web3auth/base", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-base-virtual-ff50f6c4a1/0/cache/@web3auth-base-npm-0.3.1-1f076fbc53-778f749ecf.zip/node_modules/@web3auth/base/",
+          "packageDependencies": [
+            ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["@babel/runtime", null],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
+            ["@types/babel__runtime", null],
+            ["ts-custom-error", "npm:3.2.0"]
+          ],
+          "packagePeers": [
+            "@babel/runtime",
+            "@types/babel__runtime"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:582608d7706bd255951549d73c82b86133a8777d27cab92e4067e2602d79e2887cdba82a973d339e1fd917c5d64a96ea78dd01c65ef941cd10275a11f6f260a2#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-base-virtual-97043fb023/0/cache/@web3auth-base-npm-0.6.3-9bcf247ab9-ff42539a21.zip/node_modules/@web3auth/base/",
+          "packageDependencies": [
+            ["@web3auth/base", "virtual:582608d7706bd255951549d73c82b86133a8777d27cab92e4067e2602d79e2887cdba82a973d339e1fd917c5d64a96ea78dd01c65ef941cd10275a11f6f260a2#npm:0.6.3"],
+            ["@babel/runtime", null],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["loglevel", "npm:1.8.0"],
             ["ts-custom-error", "npm:3.2.0"]
@@ -2590,13 +2789,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-base-virtual-ff50f6c4a1/0/cache/@web3auth-base-npm-0.3.1-1f076fbc53-778f749ecf.zip/node_modules/@web3auth/base/",
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-base-virtual-9fef58c813/0/cache/@web3auth-base-npm-0.6.3-9bcf247ab9-ff42539a21.zip/node_modules/@web3auth/base/",
           "packageDependencies": [
-            ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
-            ["@babel/runtime", null],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
+            ["loglevel", "npm:1.8.0"],
             ["ts-custom-error", "npm:3.2.0"]
           ],
           "packagePeers": [
@@ -2607,23 +2807,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/base-plugin", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-base-plugin-npm-0.10.0-8dba824b56-9fee578b6a.zip/node_modules/@web3auth/base-plugin/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-base-plugin-npm-0.6.3-582608d770-3d0b50f89c.zip/node_modules/@web3auth/base-plugin/",
           "packageDependencies": [
-            ["@web3auth/base-plugin", "npm:0.10.0"],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"]
+            ["@web3auth/base-plugin", "npm:0.6.3"],
+            ["@web3auth/base", "virtual:582608d7706bd255951549d73c82b86133a8777d27cab92e4067e2602d79e2887cdba82a973d339e1fd917c5d64a96ea78dd01c65ef941cd10275a11f6f260a2#npm:0.6.3"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@web3auth/base-provider", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-base-provider-npm-0.10.0-52c905833a-348ab8e1e5.zip/node_modules/@web3auth/base-provider/",
-          "packageDependencies": [
-            ["@web3auth/base-provider", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-base-provider-npm-0.3.1-7b70f7a330-f3bc0bad37.zip/node_modules/@web3auth/base-provider/",
           "packageDependencies": [
@@ -2631,15 +2824,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-base-provider-virtual-5f6e4896be/0/cache/@web3auth-base-provider-npm-0.10.0-52c905833a-348ab8e1e5.zip/node_modules/@web3auth/base-provider/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-base-provider-npm-0.6.3-622d5a42f4-ff116447e2.zip/node_modules/@web3auth/base-provider/",
           "packageDependencies": [
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@web3auth/base-provider", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-base-provider-virtual-8233f76414/0/cache/@web3auth-base-provider-npm-0.6.3-622d5a42f4-ff116447e2.zip/node_modules/@web3auth/base-provider/",
+          "packageDependencies": [
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/base-controllers", "virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
             ["eth-rpc-errors", "npm:4.0.3"],
             ["json-rpc-random-id", "npm:1.0.1"]
           ],
@@ -2654,8 +2854,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@web3auth/base-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
             ["@babel/runtime", null],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["eth-rpc-errors", "npm:4.0.3"],
@@ -2669,32 +2869,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/core", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-core-npm-0.10.0-590f77021d-2c7fbbf41b.zip/node_modules/@web3auth/core/",
-          "packageDependencies": [
-            ["@web3auth/core", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-core-npm-0.3.1-4c0b972f60-24384afd0e.zip/node_modules/@web3auth/core/",
           "packageDependencies": [
             ["@web3auth/core", "npm:0.3.1"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["loglevel", "npm:1.8.0"]
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-core-virtual-83087ab723/0/cache/@web3auth-core-npm-0.10.0-590f77021d-2c7fbbf41b.zip/node_modules/@web3auth/core/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-core-npm-0.6.3-3c41968489-efcfc21e7a.zip/node_modules/@web3auth/core/",
           "packageDependencies": [
-            ["@web3auth/core", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@web3auth/core", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-core-virtual-36a8faff95/0/cache/@web3auth-core-npm-0.6.3-3c41968489-efcfc21e7a.zip/node_modules/@web3auth/core/",
+          "packageDependencies": [
+            ["@web3auth/core", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-plugin", "npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-plugin", "npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -2704,13 +2904,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/ethereum-provider", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-ethereum-provider-npm-0.10.0-ead4c6c150-032c043160.zip/node_modules/@web3auth/ethereum-provider/",
-          "packageDependencies": [
-            ["@web3auth/ethereum-provider", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-ethereum-provider-npm-0.3.1-61bfc93942-a4837ba2f9.zip/node_modules/@web3auth/ethereum-provider/",
           "packageDependencies": [
@@ -2718,21 +2911,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-ethereum-provider-virtual-62e1f91e23/0/cache/@web3auth-ethereum-provider-npm-0.10.0-ead4c6c150-032c043160.zip/node_modules/@web3auth/ethereum-provider/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-ethereum-provider-npm-0.6.3-33c2cf9c11-605442f8f7.zip/node_modules/@web3auth/ethereum-provider/",
           "packageDependencies": [
-            ["@web3auth/ethereum-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/ethereum-provider", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-ethereum-provider-virtual-d0bf10f756/0/cache/@web3auth-ethereum-provider-npm-0.6.3-33c2cf9c11-605442f8f7.zip/node_modules/@web3auth/ethereum-provider/",
+          "packageDependencies": [
+            ["@web3auth/ethereum-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@ethereumjs/common", "npm:2.6.4"],
             ["@ethereumjs/tx", "npm:3.5.1"],
             ["@metamask/eth-sig-util", "npm:4.0.1"],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/http-helpers", "virtual:f2ad0da43f926913cde44b4700e270bac2d2e74440dfd8ae71a13db6650a0f156faa75ff05570c0a8d292e7cc081fdcc0454e63245b67263aba7e9455d51d55e#npm:2.2.0"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17"],
+            ["@toruslabs/http-helpers", "virtual:919d1f269fc9e68258e38b98227ed8965ffa35db5255a143fe39633f48e40f169bf0112a81395792b2f82b794f4fc6db2541a701727d07aa73cb213e0c0fc772#npm:2.2.0"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["@walletconnect/types", "npm:1.7.8"],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
             ["bignumber.js", "npm:9.0.2"],
             ["eth-rpc-errors", "npm:4.0.3"],
             ["ethereumjs-util", "npm:7.1.4"]
@@ -2751,8 +2951,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ethereumjs/common", "npm:2.6.4"],
             ["@ethereumjs/tx", "npm:3.5.1"],
             ["@metamask/eth-sig-util", "npm:4.0.1"],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@types/babel__runtime", null],
             ["@walletconnect/types", "npm:1.7.8"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
@@ -2769,13 +2969,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/metamask-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-metamask-adapter-npm-0.10.0-19f9684f98-e21b74eb9f.zip/node_modules/@web3auth/metamask-adapter/",
-          "packageDependencies": [
-            ["@web3auth/metamask-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-metamask-adapter-npm-0.3.1-89ecd0ff2a-4ba425f74c.zip/node_modules/@web3auth/metamask-adapter/",
           "packageDependencies": [
@@ -2786,14 +2979,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-metamask-adapter-virtual-a952402c68/0/cache/@web3auth-metamask-adapter-npm-0.10.0-19f9684f98-e21b74eb9f.zip/node_modules/@web3auth/metamask-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-metamask-adapter-npm-0.6.3-75c7f00846-b54c967731.zip/node_modules/@web3auth/metamask-adapter/",
           "packageDependencies": [
-            ["@web3auth/metamask-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/metamask-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-metamask-adapter-virtual-51a1f24afb/0/cache/@web3auth-metamask-adapter-npm-0.6.3-75c7f00846-b54c967731.zip/node_modules/@web3auth/metamask-adapter/",
+          "packageDependencies": [
+            ["@web3auth/metamask-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@metamask/detect-provider", "npm:1.2.0"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -2803,19 +3003,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/openlogin-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-openlogin-adapter-npm-0.10.0-24a0cda07f-09e352d923.zip/node_modules/@web3auth/openlogin-adapter/",
-          "packageDependencies": [
-            ["@web3auth/openlogin-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-openlogin-adapter-npm-0.3.1-37a0171cb7-2547e918fe.zip/node_modules/@web3auth/openlogin-adapter/",
           "packageDependencies": [
             ["@web3auth/openlogin-adapter", "npm:0.3.1"],
-            ["@toruslabs/openlogin", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4"],
-            ["@toruslabs/openlogin-ed25519", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.0"],
+            ["@toruslabs/openlogin", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.4"],
+            ["@toruslabs/openlogin-ed25519", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.0"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["@web3auth/base-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
             ["@web3auth/ethereum-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
@@ -2825,18 +3018,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-openlogin-adapter-virtual-226e8e5bdc/0/cache/@web3auth-openlogin-adapter-npm-0.10.0-24a0cda07f-09e352d923.zip/node_modules/@web3auth/openlogin-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-openlogin-adapter-npm-0.6.3-38018ee752-69fad6702f.zip/node_modules/@web3auth/openlogin-adapter/",
           "packageDependencies": [
-            ["@web3auth/openlogin-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/openlogin", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4"],
-            ["@toruslabs/openlogin-ed25519", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.0"],
+            ["@web3auth/openlogin-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-openlogin-adapter-virtual-20eb6d2337/0/cache/@web3auth-openlogin-adapter-npm-0.6.3-38018ee752-69fad6702f.zip/node_modules/@web3auth/openlogin-adapter/",
+          "packageDependencies": [
+            ["@web3auth/openlogin-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/openlogin", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.4"],
+            ["@toruslabs/openlogin-ed25519", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.0"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@web3auth/ethereum-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@web3auth/solana-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@web3auth/ethereum-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@web3auth/solana-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
             ["lodash.merge", "npm:4.6.2"]
           ],
           "packagePeers": [
@@ -2847,13 +3047,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/phantom-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-phantom-adapter-npm-0.10.0-5a81014db8-56a12eb173.zip/node_modules/@web3auth/phantom-adapter/",
-          "packageDependencies": [
-            ["@web3auth/phantom-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-phantom-adapter-npm-0.3.1-8d1c39c940-ec25a192a7.zip/node_modules/@web3auth/phantom-adapter/",
           "packageDependencies": [
@@ -2866,15 +3059,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-phantom-adapter-virtual-34d6358e60/0/cache/@web3auth-phantom-adapter-npm-0.10.0-5a81014db8-56a12eb173.zip/node_modules/@web3auth/phantom-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-phantom-adapter-npm-0.6.3-d8c8e1533d-ad71e59244.zip/node_modules/@web3auth/phantom-adapter/",
           "packageDependencies": [
-            ["@web3auth/phantom-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/phantom-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-phantom-adapter-virtual-424f6496be/0/cache/@web3auth-phantom-adapter-npm-0.6.3-d8c8e1533d-ad71e59244.zip/node_modules/@web3auth/phantom-adapter/",
+          "packageDependencies": [
+            ["@web3auth/phantom-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@web3auth/solana-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@web3auth/solana-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
             ["bn.js", "npm:5.2.0"]
           ],
           "packagePeers": [
@@ -2885,13 +3085,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/solana-provider", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-solana-provider-npm-0.10.0-623bea0108-a737e52d37.zip/node_modules/@web3auth/solana-provider/",
-          "packageDependencies": [
-            ["@web3auth/solana-provider", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-solana-provider-npm-0.3.1-7f3a37ee24-c8556ceb1c.zip/node_modules/@web3auth/solana-provider/",
           "packageDependencies": [
@@ -2899,18 +3092,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-solana-provider-virtual-fb8faf1645/0/cache/@web3auth-solana-provider-npm-0.10.0-623bea0108-a737e52d37.zip/node_modules/@web3auth/solana-provider/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-solana-provider-npm-0.6.3-986d7f4a18-00b3f1c81e.zip/node_modules/@web3auth/solana-provider/",
           "packageDependencies": [
-            ["@web3auth/solana-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/solana-provider", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-solana-provider-virtual-04ff5bc313/0/cache/@web3auth-solana-provider-npm-0.6.3-986d7f4a18-00b3f1c81e.zip/node_modules/@web3auth/solana-provider/",
+          "packageDependencies": [
+            ["@web3auth/solana-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@solana/web3.js", "npm:1.41.4"],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:8233f764140f7425572faa7a55b1ac9bf3063c7d5de88fdcd9a105ce103388f0dadf1c92c312c00523cdc06b0706f43d3fb860745e8988fdf747311577ef8d31#npm:1.6.17"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@toruslabs/tweetnacl-js", "npm:1.0.3"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
             ["bn.js", "npm:5.2.0"],
             ["bs58", "npm:4.0.1"],
             ["eth-rpc-errors", "npm:4.0.3"],
@@ -2928,8 +3128,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@web3auth/solana-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
             ["@babel/runtime", null],
             ["@solana/web3.js", "npm:1.41.4"],
-            ["@toruslabs/base-controllers", "virtual:5f6e4896be70a227331d34f369b65a0be0e27dcd05e673ee093221e19305db4a0527598e0b96abc7d911a30a51bac54d915c354592a6684ebf7fd1698b266c8f#npm:1.6.17"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/base-controllers", "virtual:3a7ee52a0b56322830850ebe6918747c0f3521e5f17b6f8a246dd611d5c20ba079dad34ecc7f48fd5737401f6af51dcf99cda685b477295ae3cd82a6c7d2f706#npm:1.6.17"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@toruslabs/tweetnacl-js", "npm:1.0.3"],
             ["@types/babel__runtime", null],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
@@ -2948,31 +3148,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/torus-evm-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-torus-evm-adapter-npm-0.10.0-c68890f62c-680000a6bf.zip/node_modules/@web3auth/torus-evm-adapter/",
-          "packageDependencies": [
-            ["@web3auth/torus-evm-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-torus-evm-adapter-npm-0.3.1-c7da79903b-baad7a2fbd.zip/node_modules/@web3auth/torus-evm-adapter/",
           "packageDependencies": [
             ["@web3auth/torus-evm-adapter", "npm:0.3.1"],
-            ["@toruslabs/torus-embed", "virtual:8683335a2d0d0d8922215e6603f959f48631f63150cc6b1b28a4cb0c8b2ad9488052a9322cce2b5ec178507b8fe580aa8d6e923e8d7065f2b2958775df752e60#npm:1.22.5"],
+            ["@toruslabs/torus-embed", "virtual:c7da79903b44c93b333d5751ad3c1b95771c28b9afa9a9c5aca76a01e8708c8c491adc93af7679b6bd55c8ffafac55ffe9dda919b37743b3d83ff7d043a2da53#npm:1.22.5"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["loglevel", "npm:1.8.0"]
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-torus-evm-adapter-virtual-8683335a2d/0/cache/@web3auth-torus-evm-adapter-npm-0.10.0-c68890f62c-680000a6bf.zip/node_modules/@web3auth/torus-evm-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-torus-evm-adapter-npm-0.6.3-8a88e031ff-1e342cd55b.zip/node_modules/@web3auth/torus-evm-adapter/",
           "packageDependencies": [
-            ["@web3auth/torus-evm-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/torus-embed", "virtual:8683335a2d0d0d8922215e6603f959f48631f63150cc6b1b28a4cb0c8b2ad9488052a9322cce2b5ec178507b8fe580aa8d6e923e8d7065f2b2958775df752e60#npm:1.22.5"],
+            ["@web3auth/torus-evm-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-torus-evm-adapter-virtual-a751f9a585/0/cache/@web3auth-torus-evm-adapter-npm-0.6.3-8a88e031ff-1e342cd55b.zip/node_modules/@web3auth/torus-evm-adapter/",
+          "packageDependencies": [
+            ["@web3auth/torus-evm-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/torus-embed", "virtual:a751f9a58598a2db18822aa8cab357a7619a9c41522e3ab60b524cf9ecb6ac0a595709222c0222bfcaa45c509ec839be8d8ccc6618539ecb53449606ccee2d3f#npm:1.22.5"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -2982,18 +3182,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/torus-solana-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-torus-solana-adapter-npm-0.10.0-730c5b5e7f-93043e4ad7.zip/node_modules/@web3auth/torus-solana-adapter/",
-          "packageDependencies": [
-            ["@web3auth/torus-solana-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-torus-solana-adapter-npm-0.3.1-f3c6638dc0-a6ce2aa2f5.zip/node_modules/@web3auth/torus-solana-adapter/",
           "packageDependencies": [
             ["@web3auth/torus-solana-adapter", "npm:0.3.1"],
-            ["@toruslabs/solana-embed", "virtual:536b73c89e955e6a3bcdaa2d767eafe78e111865824f85e6c93acc2196e51cc10d8f5a976e9e85bcdffb09600179f0ffa155133bab912cbac06c8b096b03bcd2#npm:0.1.6"],
+            ["@toruslabs/solana-embed", "virtual:f3c6638dc0a8e8c26928f4931bf07a20f3c27e6d5f7f4bcc6cb879ad6de397badab5e854e81382e9a350096940dc9c006ab0d8227c2590f105186d424a6b2847#npm:0.1.6"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["@web3auth/base-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
             ["@web3auth/solana-provider", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:0.3.1"],
@@ -3001,16 +3194,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-torus-solana-adapter-virtual-536b73c89e/0/cache/@web3auth-torus-solana-adapter-npm-0.10.0-730c5b5e7f-93043e4ad7.zip/node_modules/@web3auth/torus-solana-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-torus-solana-adapter-npm-0.6.3-a739caed6e-3256ff2329.zip/node_modules/@web3auth/torus-solana-adapter/",
           "packageDependencies": [
-            ["@web3auth/torus-solana-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/solana-embed", "virtual:536b73c89e955e6a3bcdaa2d767eafe78e111865824f85e6c93acc2196e51cc10d8f5a976e9e85bcdffb09600179f0ffa155133bab912cbac06c8b096b03bcd2#npm:0.1.6"],
+            ["@web3auth/torus-solana-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-torus-solana-adapter-virtual-7e87976156/0/cache/@web3auth-torus-solana-adapter-npm-0.6.3-a739caed6e-3256ff2329.zip/node_modules/@web3auth/torus-solana-adapter/",
+          "packageDependencies": [
+            ["@web3auth/torus-solana-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/solana-embed", "virtual:7e87976156e082005bcc8d8140ba934c017971adce6a1b180607be465787d26bde242edac42b1e58ca2dd0a499c546c67f5e90e1b73ecb691e2365a202c26b9e#npm:0.1.6"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/base-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"],
-            ["@web3auth/solana-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/base-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"],
+            ["@web3auth/solana-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -3020,45 +3220,44 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/ui", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-ui-npm-0.10.0-653da4bd68-28bbc1347c.zip/node_modules/@web3auth/ui/",
-          "packageDependencies": [
-            ["@web3auth/ui", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.3", {
           "packageLocation": "./.yarn/cache/@web3auth-ui-npm-0.3.3-a19e4012ba-42d005a375.zip/node_modules/@web3auth/ui/",
           "packageDependencies": [
             ["@web3auth/ui", "npm:0.3.3"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@toruslabs/openlogin-jrpc", "virtual:97043fb0231ae647291017b3c7f8620050604e5f9294497ca4bb13d8f49e4edab13a5304e8148d71810253ae73d6a4b6af03b7b31319ad81636f663acd817243#npm:1.7.3"],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["classnames", "npm:2.3.1"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.merge", "npm:4.6.2"],
             ["loglevel", "npm:1.8.0"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:17.0.2"],
-            ["react-qr-code", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:2.0.7"]
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
+            ["react-qr-code", "virtual:2e6d7f0113d5adc46260db24f04460ea9db369798989de99326b7b8f703d37850d4da6abd0bb5f5959beaeee36fb81b6c6aae285a80adee97ad6d5ce9f8ae85a#npm:2.0.7"]
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-ui-virtual-ab6039c04e/0/cache/@web3auth-ui-npm-0.10.0-653da4bd68-28bbc1347c.zip/node_modules/@web3auth/ui/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-ui-npm-0.6.3-06a1e408af-d3f1918a54.zip/node_modules/@web3auth/ui/",
           "packageDependencies": [
-            ["@web3auth/ui", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
-            ["@toruslabs/openlogin", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4"],
-            ["@toruslabs/openlogin-jrpc", "virtual:c4c4cedcabd7f9b3fcbb6ba5f5a55e31b59d4ce32e30893b700972fa5a85d690519b172f509b20d5f8781dad8ba9a107377341cfd9442e936bcb38240a581eac#npm:1.7.3"],
+            ["@web3auth/ui", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-ui-virtual-2e6d7f0113/0/cache/@web3auth-ui-npm-0.6.3-06a1e408af-d3f1918a54.zip/node_modules/@web3auth/ui/",
+          "packageDependencies": [
+            ["@web3auth/ui", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@toruslabs/openlogin", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:1.7.4"],
+            ["@toruslabs/openlogin-jrpc", "virtual:9fef58c813993eb7f98e6282961be11e4c9d2fc51e0fe89e7f5f06987d0bfe597d7c62484aa6329640f33dc698b9ec75774d0838c9630119726066b591f994f4#npm:1.7.3"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["bowser", "npm:2.11.0"],
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
             ["classnames", "npm:2.3.1"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.merge", "npm:4.6.2"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:17.0.2"],
-            ["react-qr-code", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:2.0.7"]
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
+            ["react-qr-code", "virtual:2e6d7f0113d5adc46260db24f04460ea9db369798989de99326b7b8f703d37850d4da6abd0bb5f5959beaeee36fb81b6c6aae285a80adee97ad6d5ce9f8ae85a#npm:2.0.7"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -3068,13 +3267,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/wallet-connect-v1-adapter", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-wallet-connect-v1-adapter-npm-0.10.0-0629bf671d-e87f4f93d8.zip/node_modules/@web3auth/wallet-connect-v1-adapter/",
-          "packageDependencies": [
-            ["@web3auth/wallet-connect-v1-adapter", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.1", {
           "packageLocation": "./.yarn/cache/@web3auth-wallet-connect-v1-adapter-npm-0.3.1-addea201aa-61e83620e1.zip/node_modules/@web3auth/wallet-connect-v1-adapter/",
           "packageDependencies": [
@@ -3087,16 +3279,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-wallet-connect-v1-adapter-virtual-b8bb55e9c0/0/cache/@web3auth-wallet-connect-v1-adapter-npm-0.10.0-0629bf671d-e87f4f93d8.zip/node_modules/@web3auth/wallet-connect-v1-adapter/",
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-wallet-connect-v1-adapter-npm-0.6.3-df49805bcc-91348ffcba.zip/node_modules/@web3auth/wallet-connect-v1-adapter/",
           "packageDependencies": [
-            ["@web3auth/wallet-connect-v1-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/wallet-connect-v1-adapter", "npm:0.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-wallet-connect-v1-adapter-virtual-687d981d8f/0/cache/@web3auth-wallet-connect-v1-adapter-npm-0.6.3-df49805bcc-91348ffcba.zip/node_modules/@web3auth/wallet-connect-v1-adapter/",
+          "packageDependencies": [
+            ["@web3auth/wallet-connect-v1-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
             ["@walletconnect/client", "npm:1.7.8"],
             ["@walletconnect/types", "npm:1.7.8"],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/ethereum-provider", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/ethereum-provider", "virtual:20eb6d23378a67385814387ef5a33759c8632280b22572da875d913a766cc137f4ec294c3109b0e2cf98ee8f260985ee515d1de78513784912804b90c6a9b98a#npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -3106,17 +3305,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@web3auth/web3auth", [
-        ["npm:0.10.0", {
-          "packageLocation": "./.yarn/cache/@web3auth-web3auth-npm-0.10.0-d0257d84b9-e1be24e737.zip/node_modules/@web3auth/web3auth/",
-          "packageDependencies": [
-            ["@web3auth/web3auth", "npm:0.10.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:0.3.3", {
           "packageLocation": "./.yarn/cache/@web3auth-web3auth-npm-0.3.3-543e2488d5-47473a2539.zip/node_modules/@web3auth/web3auth/",
           "packageDependencies": [
             ["@web3auth/web3auth", "npm:0.3.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/@web3auth-web3auth-npm-0.6.3-429a9cc585-f8d490877f.zip/node_modules/@web3auth/web3auth/",
+          "packageDependencies": [
+            ["@web3auth/web3auth", "npm:0.6.3"]
           ],
           "linkType": "SOFT",
         }],
@@ -3125,7 +3324,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@web3auth/web3auth", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:0.3.3"],
             ["@babel/runtime", null],
-            ["@toruslabs/openlogin", "virtual:226e8e5bdc5d92992030eec5410fe69cc392f4d841d0cc5f55faca04dfab19b4e3588a11a0aa558defdc6d93b53a0cea80398a20401a9fa22b83fcc877c137c4#npm:1.7.4"],
+            ["@toruslabs/openlogin", "virtual:37a0171cb7e8c70d6dd81299c5dda3617f4a74947a860c86711fd9450917753ac1ff4c9da3b238eb01de0b4e9d7f4473a92da3b9c5bd2f8763ea8f58b30153a4#npm:1.7.4"],
             ["@types/babel__runtime", null],
             ["@web3auth/base", "virtual:4c0b972f60dff324a38ad130b3515a6dfb4dfa8dc4ed2b7aaed7ab70d2852763e3bbf7e03aaf643f5deee001d9e90ed619790a730c7a142012b651fa947d2e2b#npm:0.3.1"],
             ["@web3auth/core", "npm:0.3.1"],
@@ -3144,21 +3343,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.10.0", {
-          "packageLocation": "./.yarn/__virtual__/@web3auth-web3auth-virtual-482c8512c5/0/cache/@web3auth-web3auth-npm-0.10.0-d0257d84b9-e1be24e737.zip/node_modules/@web3auth/web3auth/",
+        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.6.3", {
+          "packageLocation": "./.yarn/__virtual__/@web3auth-web3auth-virtual-bbb74e5bd3/0/cache/@web3auth-web3auth-npm-0.6.3-429a9cc585-f8d490877f.zip/node_modules/@web3auth/web3auth/",
           "packageDependencies": [
-            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.10.0"],
-            ["@babel/runtime", null],
+            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.6.3"],
+            ["@babel/runtime", "npm:7.17.9"],
             ["@types/babel__runtime", null],
-            ["@web3auth/base", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/core", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/metamask-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/openlogin-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/phantom-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/torus-evm-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/torus-solana-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/ui", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"],
-            ["@web3auth/wallet-connect-v1-adapter", "virtual:482c8512c5e85f80cd55166b1917729905eda3522c85b01a4a312e859687b9b8260da9a51461ba7dad48b16e76ae4ccec09388ebd742a63745b830eb8d0b69fe#npm:0.10.0"]
+            ["@web3auth/base", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/core", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/metamask-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/openlogin-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/phantom-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/torus-evm-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/torus-solana-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/ui", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"],
+            ["@web3auth/wallet-connect-v1-adapter", "virtual:bbb74e5bd3fd9fdd5e598b097435b6144b048b8925d9ee418b5a095dc0e1116ba26b2fb84a17ce188a000a43e71a82a937e1bd782f1974d046ecdc89170aaa63#npm:0.6.3"]
           ],
           "packagePeers": [
             "@babel/runtime",
@@ -3331,19 +3530,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["amazon-clone-blockchain", "workspace:."],
+            ["@babel/runtime", "npm:7.17.9"],
+            ["@openzeppelin/contracts", "npm:4.6.0"],
+            ["@walletconnect/encoding", "npm:1.0.1"],
             ["@walletconnect/web3-provider", "npm:1.7.8"],
-            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.10.0"],
+            ["@web3auth/web3auth", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:0.6.3"],
             ["autoprefixer", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:10.4.7"],
-            ["eslint", "npm:8.14.0"],
-            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
+            ["eslint", "npm:8.11.0"],
+            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
             ["ethers", "npm:5.6.5"],
             ["magic-sdk", "npm:8.1.1"],
             ["moment", "npm:2.29.3"],
             ["moralis", "npm:1.6.0"],
-            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
+            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
             ["postcss", "npm:8.4.13"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["react-icons", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:4.3.1"],
             ["react-moralis", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.3.5"],
             ["react-simple-hook-modal", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.1.0"],
@@ -4260,6 +4462,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["caniuse-lite", "npm:1.0.30001336"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.30001338", {
+          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001338-0f5d19b25f-80ac481b20.zip/node_modules/caniuse-lite/",
+          "packageDependencies": [
+            ["caniuse-lite", "npm:1.0.30001338"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["caseless", [
@@ -5060,7 +5269,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__core", null],
             ["@types/react", null],
             ["hoist-non-react-statics", "npm:3.3.2"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@emotion/core",
@@ -5283,10 +5492,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint", [
-        ["npm:8.14.0", {
-          "packageLocation": "./.yarn/cache/eslint-npm-8.14.0-a7409c84b6-87d2e3e5eb.zip/node_modules/eslint/",
+        ["npm:8.11.0", {
+          "packageLocation": "./.yarn/cache/eslint-npm-8.11.0-901f8512d3-a06a2ea370.zip/node_modules/eslint/",
           "packageDependencies": [
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["@eslint/eslintrc", "npm:1.2.2"],
             ["@humanwhocodes/config-array", "npm:0.9.5"],
             ["ajv", "npm:6.12.6"],
@@ -5296,7 +5505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["doctrine", "npm:3.0.0"],
             ["escape-string-regexp", "npm:4.0.0"],
             ["eslint-scope", "npm:7.1.1"],
-            ["eslint-utils", "virtual:a7409c84b61f35c248bc93566bf8fe73b6234054b619f3bbec23037f3f24bd139aa7cd530018043e45a35c26c7ad9770bfcf5193be3a487505a0520c5fedc39a#npm:3.0.0"],
+            ["eslint-utils", "virtual:901f8512d336edf472073de120b019e4fd24c7d4fb4847ed508664d57a402606082cba517bb12d8abdbecea4b71ca43e00af9ea84d56ecca60f147813cb947bb#npm:3.0.0"],
             ["eslint-visitor-keys", "npm:3.3.0"],
             ["espree", "npm:9.3.1"],
             ["esquery", "npm:1.4.0"],
@@ -5327,31 +5536,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint-config-next", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/cache/eslint-config-next-npm-12.1.6-d0b7124e2a-b3ba9e8f59.zip/node_modules/eslint-config-next/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/cache/eslint-config-next-npm-12.1.0-5f053283c6-38664b2fdc.zip/node_modules/eslint-config-next/",
           "packageDependencies": [
-            ["eslint-config-next", "npm:12.1.6"]
+            ["eslint-config-next", "npm:12.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6", {
-          "packageLocation": "./.yarn/__virtual__/eslint-config-next-virtual-24f31ba678/0/cache/eslint-config-next-npm-12.1.6-d0b7124e2a-b3ba9e8f59.zip/node_modules/eslint-config-next/",
+        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-config-next-virtual-1e28ba5823/0/cache/eslint-config-next-npm-12.1.0-5f053283c6-38664b2fdc.zip/node_modules/eslint-config-next/",
           "packageDependencies": [
-            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
-            ["@next/eslint-plugin-next", "npm:12.1.6"],
+            ["eslint-config-next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
+            ["@next/eslint-plugin-next", "npm:12.1.0"],
             ["@rushstack/eslint-patch", "npm:1.1.3"],
             ["@types/eslint", null],
             ["@types/next", null],
             ["@types/typescript", null],
-            ["@typescript-eslint/parser", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:5.22.0"],
-            ["eslint", "npm:8.14.0"],
+            ["@typescript-eslint/parser", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:5.22.0"],
+            ["eslint", "npm:8.11.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
-            ["eslint-import-resolver-typescript", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.7.1"],
-            ["eslint-plugin-import", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.26.0"],
-            ["eslint-plugin-jsx-a11y", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:6.5.1"],
-            ["eslint-plugin-react", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:7.29.4"],
-            ["eslint-plugin-react-hooks", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:4.5.0"],
-            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
+            ["eslint-import-resolver-typescript", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.7.1"],
+            ["eslint-plugin-import", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.26.0"],
+            ["eslint-plugin-jsx-a11y", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:6.5.1"],
+            ["eslint-plugin-react", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:7.29.4"],
+            ["eslint-plugin-react-hooks", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:4.5.0"],
+            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
             ["typescript", null]
           ],
           "packagePeers": [
@@ -5384,15 +5593,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.7.1", {
-          "packageLocation": "./.yarn/__virtual__/eslint-import-resolver-typescript-virtual-d7827bf4e2/0/cache/eslint-import-resolver-typescript-npm-2.7.1-2dfe313e23-1d81b657b1.zip/node_modules/eslint-import-resolver-typescript/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.7.1", {
+          "packageLocation": "./.yarn/__virtual__/eslint-import-resolver-typescript-virtual-4725100de1/0/cache/eslint-import-resolver-typescript-npm-2.7.1-2dfe313e23-1d81b657b1.zip/node_modules/eslint-import-resolver-typescript/",
           "packageDependencies": [
-            ["eslint-import-resolver-typescript", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.7.1"],
+            ["eslint-import-resolver-typescript", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.7.1"],
             ["@types/eslint", null],
             ["@types/eslint-plugin-import", null],
             ["debug", "virtual:c61bddeb28ff5847f1a465b4dddb837a3d099a22e15a9fe3124a47a7e2d4ac1c2af811c54e48451d4f63d1957aae19762d202c1b452ad077e0fae6b219584389#npm:4.3.4"],
-            ["eslint", "npm:8.14.0"],
-            ["eslint-plugin-import", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.26.0"],
+            ["eslint", "npm:8.11.0"],
+            ["eslint-plugin-import", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.26.0"],
             ["glob", "npm:7.2.0"],
             ["is-glob", "npm:4.0.3"],
             ["resolve", "patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"],
@@ -5426,16 +5635,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.26.0", {
-          "packageLocation": "./.yarn/__virtual__/eslint-plugin-import-virtual-d3ceb63b80/0/cache/eslint-plugin-import-npm-2.26.0-959fe14a01-0bf77ad803.zip/node_modules/eslint-plugin-import/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.26.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-import-virtual-e714487d44/0/cache/eslint-plugin-import-npm-2.26.0-959fe14a01-0bf77ad803.zip/node_modules/eslint-plugin-import/",
           "packageDependencies": [
-            ["eslint-plugin-import", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:2.26.0"],
+            ["eslint-plugin-import", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:2.26.0"],
             ["@types/eslint", null],
             ["array-includes", "npm:3.1.5"],
             ["array.prototype.flat", "npm:1.3.0"],
             ["debug", "virtual:3aaa6c5dc08e37f1885821d8c261da4e4ab1d1f5153b7f528f377531e02985645d22d267e2ab3230fce8ca8d1ff07d24652f2cb79334d18c0b7c4828e63399f4#npm:2.6.9"],
             ["doctrine", "npm:2.1.0"],
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
             ["eslint-module-utils", "npm:2.7.3"],
             ["has", "npm:1.0.3"],
@@ -5461,10 +5670,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:6.5.1", {
-          "packageLocation": "./.yarn/__virtual__/eslint-plugin-jsx-a11y-virtual-299da1a9cb/0/cache/eslint-plugin-jsx-a11y-npm-6.5.1-ea493bf2f2-311ab993ed.zip/node_modules/eslint-plugin-jsx-a11y/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:6.5.1", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-jsx-a11y-virtual-a66fbf5d5f/0/cache/eslint-plugin-jsx-a11y-npm-6.5.1-ea493bf2f2-311ab993ed.zip/node_modules/eslint-plugin-jsx-a11y/",
           "packageDependencies": [
-            ["eslint-plugin-jsx-a11y", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:6.5.1"],
+            ["eslint-plugin-jsx-a11y", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:6.5.1"],
             ["@babel/runtime", "npm:7.17.9"],
             ["@types/eslint", null],
             ["aria-query", "npm:4.2.2"],
@@ -5474,7 +5683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axobject-query", "npm:2.2.0"],
             ["damerau-levenshtein", "npm:1.0.8"],
             ["emoji-regex", "npm:9.2.2"],
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["has", "npm:1.0.3"],
             ["jsx-ast-utils", "npm:3.3.0"],
             ["language-tags", "npm:1.0.5"],
@@ -5495,15 +5704,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:7.29.4", {
-          "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-virtual-052d376c47/0/cache/eslint-plugin-react-npm-7.29.4-00350d7489-bb7d3715cc.zip/node_modules/eslint-plugin-react/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:7.29.4", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-virtual-38aa2ea2a2/0/cache/eslint-plugin-react-npm-7.29.4-00350d7489-bb7d3715cc.zip/node_modules/eslint-plugin-react/",
           "packageDependencies": [
-            ["eslint-plugin-react", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:7.29.4"],
+            ["eslint-plugin-react", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:7.29.4"],
             ["@types/eslint", null],
             ["array-includes", "npm:3.1.5"],
             ["array.prototype.flatmap", "npm:1.3.0"],
             ["doctrine", "npm:2.1.0"],
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["estraverse", "npm:5.3.0"],
             ["jsx-ast-utils", "npm:3.3.0"],
             ["minimatch", "npm:3.1.2"],
@@ -5531,12 +5740,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:4.5.0", {
-          "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-hooks-virtual-cc0521248e/0/cache/eslint-plugin-react-hooks-npm-4.5.0-e4de07a9f2-0389377de6.zip/node_modules/eslint-plugin-react-hooks/",
+        ["virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:4.5.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-hooks-virtual-32c4b85423/0/cache/eslint-plugin-react-hooks-npm-4.5.0-e4de07a9f2-0389377de6.zip/node_modules/eslint-plugin-react-hooks/",
           "packageDependencies": [
-            ["eslint-plugin-react-hooks", "virtual:24f31ba67827494acad8f18830ae83c9aa3e810353e0ecf1896de16e42b68e13636b89cf0b56dcfbad486348d04aafd2c55326829cd103f38841df1029539b1a#npm:4.5.0"],
+            ["eslint-plugin-react-hooks", "virtual:1e28ba582312a6110148a10cc342716af521e23e38c2f097e6aedcf0e405a6dbc2fa498c1f70175f352bfd338efd76796a02f60c71957fbd9d58e47be76cfc02#npm:4.5.0"],
             ["@types/eslint", null],
-            ["eslint", "npm:8.14.0"]
+            ["eslint", "npm:8.11.0"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -5564,12 +5773,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a7409c84b61f35c248bc93566bf8fe73b6234054b619f3bbec23037f3f24bd139aa7cd530018043e45a35c26c7ad9770bfcf5193be3a487505a0520c5fedc39a#npm:3.0.0", {
-          "packageLocation": "./.yarn/__virtual__/eslint-utils-virtual-d489d0112f/0/cache/eslint-utils-npm-3.0.0-630b3a4013-0668fe02f5.zip/node_modules/eslint-utils/",
+        ["virtual:901f8512d336edf472073de120b019e4fd24c7d4fb4847ed508664d57a402606082cba517bb12d8abdbecea4b71ca43e00af9ea84d56ecca60f147813cb947bb#npm:3.0.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-utils-virtual-82a2e207a5/0/cache/eslint-utils-npm-3.0.0-630b3a4013-0668fe02f5.zip/node_modules/eslint-utils/",
           "packageDependencies": [
-            ["eslint-utils", "virtual:a7409c84b61f35c248bc93566bf8fe73b6234054b619f3bbec23037f3f24bd139aa7cd530018043e45a35c26c7ad9770bfcf5193be3a487505a0520c5fedc39a#npm:3.0.0"],
+            ["eslint-utils", "virtual:901f8512d336edf472073de120b019e4fd24c7d4fb4847ed508664d57a402606082cba517bb12d8abdbecea4b71ca43e00af9ea84d56ecca60f147813cb947bb#npm:3.0.0"],
             ["@types/eslint", null],
-            ["eslint", "npm:8.14.0"],
+            ["eslint", "npm:8.11.0"],
             ["eslint-visitor-keys", "npm:2.1.0"]
           ],
           "packagePeers": [
@@ -8128,43 +8337,43 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["next", [
-        ["npm:12.1.6", {
-          "packageLocation": "./.yarn/cache/next-npm-12.1.6-c0598c390e-670d544fd4.zip/node_modules/next/",
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/cache/next-npm-12.1.0-7f99f50e0f-36dbafd5e6.zip/node_modules/next/",
           "packageDependencies": [
-            ["next", "npm:12.1.6"]
+            ["next", "npm:12.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6", {
-          "packageLocation": "./.yarn/__virtual__/next-virtual-82a8302e0f/0/cache/next-npm-12.1.6-c0598c390e-670d544fd4.zip/node_modules/next/",
+        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0", {
+          "packageLocation": "./.yarn/__virtual__/next-virtual-a76dea84d6/0/cache/next-npm-12.1.0-7f99f50e0f-36dbafd5e6.zip/node_modules/next/",
           "packageDependencies": [
-            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.6"],
-            ["@next/env", "npm:12.1.6"],
-            ["@next/swc-android-arm-eabi", "npm:12.1.6"],
-            ["@next/swc-android-arm64", "npm:12.1.6"],
-            ["@next/swc-darwin-arm64", "npm:12.1.6"],
-            ["@next/swc-darwin-x64", "npm:12.1.6"],
-            ["@next/swc-linux-arm-gnueabihf", "npm:12.1.6"],
-            ["@next/swc-linux-arm64-gnu", "npm:12.1.6"],
-            ["@next/swc-linux-arm64-musl", "npm:12.1.6"],
-            ["@next/swc-linux-x64-gnu", "npm:12.1.6"],
-            ["@next/swc-linux-x64-musl", "npm:12.1.6"],
-            ["@next/swc-win32-arm64-msvc", "npm:12.1.6"],
-            ["@next/swc-win32-ia32-msvc", "npm:12.1.6"],
-            ["@next/swc-win32-x64-msvc", "npm:12.1.6"],
+            ["next", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:12.1.0"],
+            ["@next/env", "npm:12.1.0"],
+            ["@next/swc-android-arm64", "npm:12.1.0"],
+            ["@next/swc-darwin-arm64", "npm:12.1.0"],
+            ["@next/swc-darwin-x64", "npm:12.1.0"],
+            ["@next/swc-linux-arm-gnueabihf", "npm:12.1.0"],
+            ["@next/swc-linux-arm64-gnu", "npm:12.1.0"],
+            ["@next/swc-linux-arm64-musl", "npm:12.1.0"],
+            ["@next/swc-linux-x64-gnu", "npm:12.1.0"],
+            ["@next/swc-linux-x64-musl", "npm:12.1.0"],
+            ["@next/swc-win32-arm64-msvc", "npm:12.1.0"],
+            ["@next/swc-win32-ia32-msvc", "npm:12.1.0"],
+            ["@next/swc-win32-x64-msvc", "npm:12.1.0"],
             ["@types/fibers", null],
             ["@types/node-sass", null],
             ["@types/react", null],
             ["@types/react-dom", null],
             ["@types/sass", null],
-            ["caniuse-lite", "npm:1.0.30001336"],
+            ["caniuse-lite", "npm:1.0.30001338"],
             ["fibers", null],
             ["node-sass", null],
             ["postcss", "npm:8.4.5"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["sass", null],
-            ["styled-jsx", "virtual:82a8302e0fd168cd2a94c2d026485ac54c5c1a7713c671abcb935997232bbf3f1d2b3188f0f62ff7dee4f4c3e685a9d0d217594171abf7a833f495682e84fc37#npm:5.0.2"]
+            ["styled-jsx", "virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:5.0.0"],
+            ["use-subscription", "virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:1.5.1"]
           ],
           "packagePeers": [
             "@types/fibers",
@@ -9076,14 +9285,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-assign", "npm:4.1.1"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:18.1.0", {
-          "packageLocation": "./.yarn/cache/react-npm-18.1.0-d66a868dc8-5bb296b561.zip/node_modules/react/",
-          "packageDependencies": [
-            ["react", "npm:18.1.0"],
-            ["loose-envify", "npm:1.4.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["react-blockies", [
@@ -9100,7 +9301,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-blockies", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:1.4.1"],
             ["@types/react", null],
             ["prop-types", "npm:15.8.1"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
@@ -9117,37 +9318,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["npm:18.1.0", {
-          "packageLocation": "./.yarn/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",
+        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2", {
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-36ec30153a/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
           "packageDependencies": [
-            ["react-dom", "npm:18.1.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:17.0.2", {
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-4e4ed69187/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
-          "packageDependencies": [
-            ["react-dom", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["@types/react", null],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
             ["react", "npm:17.0.2"],
             ["scheduler", "npm:0.20.2"]
-          ],
-          "packagePeers": [
-            "@types/react",
-            "react"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0", {
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-6b5363caec/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",
-          "packageDependencies": [
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
-            ["@types/react", null],
-            ["loose-envify", "npm:1.4.0"],
-            ["react", "npm:18.1.0"],
-            ["scheduler", "npm:0.22.0"]
           ],
           "packagePeers": [
             "@types/react",
@@ -9169,7 +9348,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["react-icons", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:4.3.1"],
             ["@types/react", null],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
@@ -9205,8 +9384,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fast-deep-equal", "npm:3.1.3"],
             ["immer", "npm:9.0.12"],
             ["moralis", "npm:1.6.0"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["use-immer", "virtual:cd054e6e3b7e569422d5f772602dd0bb006061869a15945c2aea140c37fd0365716d3c674a63c08e91ec5825f301427f2ebee01bf86c2889a15fe1fe7275c37e#npm:0.6.0"]
           ],
           "packagePeers": [
@@ -9237,10 +9416,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:2.0.7", {
-          "packageLocation": "./.yarn/__virtual__/react-qr-code-virtual-cde3053923/0/cache/react-qr-code-npm-2.0.7-b51cedf496-f79d6ae975.zip/node_modules/react-qr-code/",
+        ["virtual:2e6d7f0113d5adc46260db24f04460ea9db369798989de99326b7b8f703d37850d4da6abd0bb5f5959beaeee36fb81b6c6aae285a80adee97ad6d5ce9f8ae85a#npm:2.0.7", {
+          "packageLocation": "./.yarn/__virtual__/react-qr-code-virtual-63f3a7bc19/0/cache/react-qr-code-npm-2.0.7-b51cedf496-f79d6ae975.zip/node_modules/react-qr-code/",
           "packageDependencies": [
-            ["react-qr-code", "virtual:ab6039c04e111bbe1a4d0f84068025da299cc1dd87c4064f3017ea3a51f38d5f31ead6f18602e34fa3bda0f820bc5f0159ca7553dd132d64f4f5f167884d1774#npm:2.0.7"],
+            ["react-qr-code", "virtual:2e6d7f0113d5adc46260db24f04460ea9db369798989de99326b7b8f703d37850d4da6abd0bb5f5959beaeee36fb81b6c6aae285a80adee97ad6d5ce9f8ae85a#npm:2.0.7"],
             ["@types/react", null],
             ["@types/react-native-svg", null],
             ["prop-types", "npm:15.8.1"],
@@ -9271,7 +9450,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router", "virtual:6834fee50216b3e8e3bb3866bc7e7075125889a94f8c2f7c85212b882ed7ee555e614fb863a94b2aa7fcdef88f2d7acb94eab8ea2a1a7eeffe16a82d92a5cdad#npm:6.3.0"],
             ["@types/react", null],
             ["history", "npm:5.3.0"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
@@ -9295,8 +9474,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", null],
             ["@types/react-dom", null],
             ["history", "npm:5.3.0"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["react-router", "virtual:6834fee50216b3e8e3bb3866bc7e7075125889a94f8c2f7c85212b882ed7ee555e614fb863a94b2aa7fcdef88f2d7acb94eab8ea2a1a7eeffe16a82d92a5cdad#npm:6.3.0"]
           ],
           "packagePeers": [
@@ -9322,7 +9501,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-simple-hook-modal", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.1.0"],
             ["@types/react", null],
             ["hooks", "npm:0.3.2"],
-            ["react", "npm:18.1.0"],
+            ["react", "npm:17.0.2"],
             ["react-spring", "virtual:a1b3377128ec7ebbf9b251dd8abbd8141f390ccb47245bd8d85688e8e2eb02f5f61394af642091550e5a2063ace40435532046ab21104aee133db5b80ac235a8#npm:8.0.27"]
           ],
           "packagePeers": [
@@ -9347,8 +9526,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:41af7cfb06a6d5d2f1da6f6913e3541d221edd68b232a0bfcfbbe4c2e935cd8fbab10bb2c46ac6208b3fde7e82bb943629562ac6a88e3405bcbbd6c88c2161ff#npm:11.9.0"],
             ["@types/react", null],
             ["@types/react-dom", null],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"]
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react-dom",
@@ -9375,7 +9554,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", null],
             ["@types/react-dom", null],
             ["prop-types", "npm:15.8.1"],
-            ["react", "npm:18.1.0"],
+            ["react", "npm:17.0.2"],
             ["react-dom", null]
           ],
           "packagePeers": [
@@ -9684,14 +9863,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["scheduler", "npm:0.20.2"],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:0.22.0", {
-          "packageLocation": "./.yarn/cache/scheduler-npm-0.22.0-63c9337981-a8ef5cab76.zip/node_modules/scheduler/",
-          "packageDependencies": [
-            ["scheduler", "npm:0.22.0"],
-            ["loose-envify", "npm:1.4.0"]
           ],
           "linkType": "HARD",
         }]
@@ -10201,8 +10372,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:437dea6069075b109961db81723fba77dad6ee90f255efa42b03bcad29698f314718df3bfc35340ff5094847b240fe72377866d6255c33c8636ab9f2599a4103#npm:2.0.7"],
             ["css-to-react-native", "npm:3.0.0"],
             ["hoist-non-react-statics", "npm:3.3.2"],
-            ["react", "npm:18.1.0"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["react-is", null],
             ["shallowequal", "npm:1.1.0"],
             ["supports-color", "npm:5.5.0"]
@@ -10219,23 +10390,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["styled-jsx", [
-        ["npm:5.0.2", {
-          "packageLocation": "./.yarn/cache/styled-jsx-npm-5.0.2-aff4f13ebf-86d55819eb.zip/node_modules/styled-jsx/",
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/styled-jsx-npm-5.0.0-23d0c7994a-4958238ac8.zip/node_modules/styled-jsx/",
           "packageDependencies": [
-            ["styled-jsx", "npm:5.0.2"]
+            ["styled-jsx", "npm:5.0.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:82a8302e0fd168cd2a94c2d026485ac54c5c1a7713c671abcb935997232bbf3f1d2b3188f0f62ff7dee4f4c3e685a9d0d217594171abf7a833f495682e84fc37#npm:5.0.2", {
-          "packageLocation": "./.yarn/__virtual__/styled-jsx-virtual-a2ba03e5d7/0/cache/styled-jsx-npm-5.0.2-aff4f13ebf-86d55819eb.zip/node_modules/styled-jsx/",
+        ["virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:5.0.0", {
+          "packageLocation": "./.yarn/__virtual__/styled-jsx-virtual-44121a5e25/0/cache/styled-jsx-npm-5.0.0-23d0c7994a-4958238ac8.zip/node_modules/styled-jsx/",
           "packageDependencies": [
-            ["styled-jsx", "virtual:82a8302e0fd168cd2a94c2d026485ac54c5c1a7713c671abcb935997232bbf3f1d2b3188f0f62ff7dee4f4c3e685a9d0d217594171abf7a833f495682e84fc37#npm:5.0.2"],
+            ["styled-jsx", "virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:5.0.0"],
             ["@babel/core", null],
             ["@types/babel-plugin-macros", null],
             ["@types/babel__core", null],
             ["@types/react", null],
             ["babel-plugin-macros", null],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@babel/core",
@@ -10500,10 +10671,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:314e7677b25013f5fd7b68d35fe353e2ee8dbc571586fc705f7b90b14a8a3a7108873c813454780ba88158aed29112878ad5d1c212b41337a7bf6b1d4c42d581#npm:3.21.0", {
-          "packageLocation": "./.yarn/__virtual__/tsutils-virtual-e816ec8eb9/0/cache/tsutils-npm-3.21.0-347e6636c5-1843f4c1b2.zip/node_modules/tsutils/",
+        ["virtual:e8b8bfc3c273eb6cf220e4c758cacd825fe964561b1b6d15da9f455b9125694178ee75205393ac01fbd216abfa1fa26da2e5c600b439a2fdbea24ab8c0d5c33c#npm:3.21.0", {
+          "packageLocation": "./.yarn/__virtual__/tsutils-virtual-f5cc7256ca/0/cache/tsutils-npm-3.21.0-347e6636c5-1843f4c1b2.zip/node_modules/tsutils/",
           "packageDependencies": [
-            ["tsutils", "virtual:314e7677b25013f5fd7b68d35fe353e2ee8dbc571586fc705f7b90b14a8a3a7108873c813454780ba88158aed29112878ad5d1c212b41337a7bf6b1d4c42d581#npm:3.21.0"],
+            ["tsutils", "virtual:e8b8bfc3c273eb6cf220e4c758cacd825fe964561b1b6d15da9f455b9125694178ee75205393ac01fbd216abfa1fa26da2e5c600b439a2fdbea24ab8c0d5c33c#npm:3.21.0"],
             ["@types/typescript", null],
             ["tslib", "npm:1.14.1"],
             ["typescript", null]
@@ -10673,12 +10844,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/immer", null],
             ["@types/react", null],
             ["immer", "npm:9.0.12"],
-            ["react", "npm:18.1.0"]
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/immer",
             "@types/react",
             "immer",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["use-subscription", [
+        ["npm:1.5.1", {
+          "packageLocation": "./.yarn/cache/use-subscription-npm-1.5.1-d91d77edbb-96e64977a5.zip/node_modules/use-subscription/",
+          "packageDependencies": [
+            ["use-subscription", "npm:1.5.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:1.5.1", {
+          "packageLocation": "./.yarn/__virtual__/use-subscription-virtual-fde244166c/0/cache/use-subscription-npm-1.5.1-d91d77edbb-96e64977a5.zip/node_modules/use-subscription/",
+          "packageDependencies": [
+            ["use-subscription", "virtual:a76dea84d61af198fb3efa9dcc7e34f1a30aa5e04992307804a3ccfb253fddfadec0d18afbb1f6182cbb22fc188fec885565503111c4247ddcf6fb3f6b75fea9#npm:1.5.1"],
+            ["@types/react", null],
+            ["object-assign", "npm:4.1.1"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -11095,9 +11289,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@walletconnect/web3-provider", "npm:1.7.8"],
             ["@web3auth/web3auth", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:0.3.3"],
             ["moralis", "npm:1.6.0"],
-            ["react", "npm:18.1.0"],
+            ["react", "npm:17.0.2"],
             ["react-blockies", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:1.4.1"],
-            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:18.1.0"],
+            ["react-dom", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:17.0.2"],
             ["react-moralis", "virtual:e5d3a0d646e86eb89f634b21da0b5f70042091c27c8ebb16fd10151787d1c8fe75a18978c3ce607cccecf71fdfcca96036f5d29ee47fbf2227f721b02e02625b#npm:1.3.5"],
             ["react-router-dom", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:6.3.0"],
             ["styled-components", "virtual:e1fc62dad40a306819c5d45c5ebc8fdfc92cffd175ae9c3bf24a696643de439ba56b7eecd1eb99bbbc6eee56304a47d5e98845e9ef84db620675c9ddf3b03057#npm:5.3.5"]
